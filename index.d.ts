@@ -10,4 +10,4 @@
  * @description
  * Entry point for all public APIs of the common package.
  */
-export * from './src/app/widget';
+export * from './src/app/widget/widget.module';
