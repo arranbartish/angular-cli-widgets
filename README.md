@@ -5,6 +5,8 @@
 [![devDependency Status](https://david-dm.org/arranbartish/angular-cli-widgets/dev-status.svg)](https://david-dm.org/arranbartish/angular-cli-widgets?type=dev)
 [![Code coverage](https://codecov.io/gh/arranbartish/angular-cli-widgets/branch/master/graph/badge.svg)](https://codecov.io/gh/arranbartish/angular-cli-widgets)
 [![Code Climate](https://codeclimate.com/github/arranbartish/angular-cli-widgets/badges/gpa.svg)](https://codeclimate.com/github/arranbartish/angular-cli-widgets)
+[![npm](https://badge.fury.io/js/arranbartish-angular-cli-widgets.svg)](https://badge.fury.io/js/arranbartish-angular-cli-widgets)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
 
