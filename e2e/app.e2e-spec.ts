@@ -1,4 +1,5 @@
 import { AngularCliWidgetsPage } from './app.po';
+const expect = global['chai'].expect;
 
 describe('angular-cli-widgets App', () => {
   let page: AngularCliWidgetsPage;
@@ -9,6 +10,6 @@ describe('angular-cli-widgets App', () => {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).to.eventually.contain('app works!');
   });
 });
