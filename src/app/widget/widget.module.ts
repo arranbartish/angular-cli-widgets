@@ -25,4 +25,4 @@ import { NavigationItemComponent } from './navigation/navigation-item.component'
     NavigationItemComponent
   ]
 })
-export class WidgitModule { }
+export class WidgetModule { }
