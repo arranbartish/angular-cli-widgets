@@ -1,5 +1,11 @@
 # AngularCliWidgets
 
+[![Build Status](https://travis-ci.org/arranbartish/angular-cli-widgets.svg?branch=master)](https://travis-ci.org/arranbartish/angular-cli-widgets)
+[![Dependency Status](https://david-dm.org/arranbartish/angular-cli-widgets.svg)](https://david-dm.org/arranbartish/angular-cli-widgets)
+[![devDependency Status](https://david-dm.org/arranbartish/angular-cli-widgets/dev-status.svg)](https://david-dm.org/arranbartish/angular-cli-widgets?type=dev)
+[![Code coverage](https://codecov.io/gh/arranbartish/angular-cli-widgets/branch/master/graph/badge.svg)](https://codecov.io/gh/arranbartish/angular-cli-widgets)
+[![Code Climate](https://codeclimate.com/github/arranbartish/angular-cli-widgets/badges/gpa.svg)](https://codeclimate.com/github/arranbartish/angular-cli-widgets)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
 
 ## Development server
@@ -26,3 +32,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Wallaby Integration 
+
+Simply install the plugin and configure your IDE to run with the wallaby config and the correct node version, __NOT__ the one that embedded in the IDE. 
+ 
+This is an example good configuration ![Image](https://cloud.githubusercontent.com/assets/979966/23509360/3557abac-ffa1-11e6-9380-e79386a14fd1.png)
