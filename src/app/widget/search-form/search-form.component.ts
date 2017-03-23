@@ -1,5 +1,5 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
-import {FormBuilder, Validators} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
 import {SearchOptions} from './search-options';
 import {ObjectService} from '../../utilities/object.service';
@@ -27,7 +27,7 @@ export class SearchFormComponent implements OnInit {
     target: DEFAULT_TARGET
   };
 
-  searchForm = this.formBuilder.group({
+  searchForm: FormGroup = this.formBuilder.group({
     terms: [this.terms, Validators.required]
   });
 
