@@ -8,6 +8,6 @@
 /**
  * @module
  * @description
- * Entry point for all public APIs of the common package.
+ * Entry point for all public APIs of the widget package.
  */
-export * from './src/app/widget/widget.module';
+export * from './src/app/widget';
