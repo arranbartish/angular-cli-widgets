@@ -8,7 +8,7 @@
 [![npm](https://badge.fury.io/js/arranbartish-angular-cli-widgets.svg)](https://badge.fury.io/js/arranbartish-angular-cli-widgets)
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
 
