@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-// import * as _ from "@types/lodash";
+import * as _ from 'lodash';
 
 @Injectable()
 export class ObjectService {
@@ -10,7 +10,8 @@ export class ObjectService {
   // only does shallow cause lodash will not resolve
 
   shallowCopy<T>(target: T, source: T) {
-    return Object.assign(target, source);
+    _.assign(target, source);
+    return target;
   }
 
 }
