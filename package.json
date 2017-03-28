@@ -13,7 +13,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "package": "rimraf dist && ngc -p tsconfig.aot.json"
   },
   "private": false,
   "dependencies": {
@@ -58,6 +59,7 @@
     "karma-sinon-chai": "^1.2.4",
     "mocha": "^3.2.0",
     "protractor": "~5.1.0",
+    "rimraf": "^2.6.1",
     "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0",
     "ts-node": "~2.0.0",

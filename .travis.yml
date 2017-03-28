@@ -22,4 +22,5 @@ script:
   - ./node_modules/codecov/bin/codecov
   - npm run ng e2e
   - npm run ng lint
-  - npm run ng build -- --prod
+  - npm run ng build
+  - npm run package
