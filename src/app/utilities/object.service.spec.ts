@@ -1,5 +1,7 @@
 import { TestBed, inject } from '@angular/core/testing';
 import { ObjectService } from './object.service';
+import {expect} from 'chai';
+
 
 describe('ObjectService', () => {
 
