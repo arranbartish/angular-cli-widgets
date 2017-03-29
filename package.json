@@ -1,6 +1,6 @@
 {
   "name": "arranbartish-angular-cli-widgets",
-  "version": "2.0.6",
+  "version": "3.0.0",
   "license": "MIT",
   "description": "UI widgets produced for use with angular2 SPA's",
   "types": "./index.ts",
@@ -14,7 +14,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "pree2e": "webdriver-manager update --versions.chrome=2.28",
-    "e2e": "ng e2e --webdriver-update false"
+    "e2e": "ng e2e --webdriver-update false",
+    "package": "rimraf dist && ngc -p tsconfig.aot.json"
   },
   "private": false,
   "dependencies": {
@@ -59,6 +60,7 @@
     "karma-sinon-chai": "^1.2.4",
     "mocha": "^3.2.0",
     "protractor": "~5.1.0",
+    "rimraf": "^2.6.1",
     "sinon": "^1.17.7",
     "sinon-chai": "^2.8.0",
     "ts-node": "~2.0.0",
