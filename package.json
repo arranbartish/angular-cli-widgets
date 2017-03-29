@@ -1,6 +1,6 @@
 {
   "name": "arranbartish-angular-cli-widgets",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "license": "MIT",
   "description": "UI widgets produced for use with angular2 SPA's",
   "types": "./index.ts",
