@@ -1,3 +1,4 @@
 *.ts
 !*.d.ts
+app.component.*
 .npmignore

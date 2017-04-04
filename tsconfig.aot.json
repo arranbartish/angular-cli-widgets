@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "",
+    "outDir": "./dist/aot",
     "module": "commonjs",
     "baseUrl": "",
     "types": [],
