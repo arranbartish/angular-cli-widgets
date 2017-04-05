@@ -20,6 +20,6 @@ install:
 script:
   - npm run ng test -- --single-run=true --browsers Chrome --code-coverage
   - ./node_modules/codecov/bin/codecov
-  - npm run ng e2e
-  - npm run ng lint
-  - npm run ng build -- --prod
+  - npm run e2e
+  - npm run lint
+  - npm run build -- --prod
