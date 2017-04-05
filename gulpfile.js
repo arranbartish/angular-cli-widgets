@@ -3,21 +3,7 @@ var inlineResources = require('./scripts/gulp/inline-resources');
 var sass = require('gulp-sass');
 
 
-gulp.task('copy-and-inline-resource', copyHtml);
-
-function copyHtml() {
-  gulp.src('src/app/**/*.html')
-    .pipe(gulp.dest('./aot/src/app')).on('end', copyAssets);
-}
-
-function copyAssets () {
-  gulp.src('./src/assets/**/*')
-    .pipe(gulp.dest('./aot/assets')).on('end', copyScss);
-}
-function copyScss () {
-  gulp.src('./src/app/**/*.scss')
-    .pipe(gulp.dest('./aot/src/app')).on('end', copyGitIgnoreFiles);
-}
+gulp.task('copy-resources', copyGitIgnoreFiles);
 
 function copyGitIgnoreFiles () {
   gulp.src('./**/.gitignore')
@@ -41,11 +27,7 @@ function copyLicenseFile () {
 
 function copyReadmeMdFile () {
   gulp.src('./README.md')
-    .pipe(gulp.dest('./aot')).on('end', inlineResource);
+    .pipe(gulp.dest('./aot'));
 }
 
-function inlineResource() {
-  inlineResources('./aot/src/app');
-}
-
-gulp.task('default', ['copy-and-inline-resource']);
+gulp.task('default', ['copy-resources']);

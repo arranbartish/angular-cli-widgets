@@ -2,7 +2,9 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./aot",
-    "module": "commonjs",
+    "module": "es2015",
+    "stripInternal": true,
+    "skipLibCheck": true,
     "baseUrl": "",
     "types": [],
     "noImplicitAny": true,
@@ -13,8 +15,15 @@
     "src/main-aot.ts",
     "index.ts"
   ],
+  "paths": {
+    "@angular/core": ["node_modules/@angular/core"],
+    "@angular/common": ["node_modules/@angular/common"],
+    "@angular/router": ["node_modules/@angular/router"],
+    "@angular/forms": ["node_modules/@angular/forms"],
+    "rxjs/*": ["node_modules/rxjs/*"]
+  },
   "angularCompilerOptions": {
     "genDir": "./aot",
-    "skipMetadataEmit" : false
+    "strictMetadataEmit" : true
   }
 }
