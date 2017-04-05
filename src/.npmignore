@@ -2,3 +2,5 @@
 !*.d.ts
 app.component.*
 .npmignore
+*.html
+*.scss

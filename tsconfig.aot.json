@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist/aot",
+    "outDir": "./aot",
     "module": "commonjs",
     "baseUrl": "",
     "types": [],
@@ -14,7 +14,7 @@
     "index.ts"
   ],
   "angularCompilerOptions": {
-    "genDir": "./dist/aot",
+    "genDir": "./aot",
     "skipMetadataEmit" : false
   }
 }
