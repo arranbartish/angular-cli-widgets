@@ -13,6 +13,17 @@
     "url": "https://github.com/arranbartish/angular-cli-widgets.git"
   },
   "contributors": [],
+  "keywords": [
+    "angular",
+    "widget",
+    "angular-cli",
+    "library",
+    "component"
+  ],
+  "bugs": {
+    "url" : "https://github.com/arranbartish/angular-cli-widgets/issues",
+    "email" : "arranbartish@hotmail.com"
+  },
   "scripts": {
     "clean": "rimraf dist && rimraf aot",
     "ng": "ng",
