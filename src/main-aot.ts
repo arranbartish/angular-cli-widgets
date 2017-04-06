@@ -2,7 +2,7 @@ import { enableProdMode } from '@angular/core';
 import {platformBrowser} from '@angular/platform-browser';
 
 import { WidgetModuleNgFactory } from '../aot/src/app/widget/widget.module.ngfactory';
-import { environment } from './environments/environment';
+import { environment } from './environments/environment.prod';
 
 if (environment.production) {
   enableProdMode();

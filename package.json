@@ -3,10 +3,14 @@
   "version": "3.0.11",
   "license": "MIT",
   "description": "UI widgets produced for use with angular2 SPA's",
-  "types": "./index.ts",
-  "typescript": {
-    "definition": "./index.ts"
+  "homepage": "https://github.com/arranbartish/angular-cli-widgets",
+  "author": "Arran Bartish <arranbartish@hotmail.com> (https://ca.linkedin.com/in/arran-bartish-7720a21)",
+  "engines" : { "node" : ">=6.1" },
+  "repository" : {
+      "type" : "git",
+      "url" : "https://github.com/arranbartish/angular-cli-widgets.git"
   },
+  "contributors": [],
   "scripts": {
     "clean": "rimraf dist && rimraf aot",
     "ng": "ng",
@@ -53,6 +57,7 @@
     "codelyzer": "~2.0.0",
     "electron": "^1.4.15",
     "gulp": "^3.9.1",
+    "gulp-json-editor": "^2.2.1",
     "gulp-sass": "^3.1.0",
     "html-minifier": "^3.4.2",
     "karma": "~1.4.1",
@@ -81,19 +86,5 @@
     "tslint": "~4.5.0",
     "typescript": "~2.2.0",
     "wallaby-webpack": "0.0.33"
-  },
-  "peerDependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/forms": "^4.0.0",
-    "@angular/http": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0",
-    "core-js": "^2.4.1",
-    "lodash": "^4.17.4",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
   }
 }

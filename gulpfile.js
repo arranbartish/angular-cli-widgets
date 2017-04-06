@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var inlineResources = require('./scripts/gulp/inline-resources');
 var sass = require('gulp-sass');
+var jeditor = require('gulp-json-editor');
+var _ = require('lodash');
 
 
 gulp.task('copy-and-inline-resource', copyHtml);
@@ -30,8 +32,22 @@ function copyNpmIgnoreFiles () {
 }
 
 function copyPackageJsonFile () {
-  gulp.src('./package.json')
-    .pipe(gulp.dest('./aot')).on('end', copyLicenseFile);
+  gulp.src("./package.json")
+    .pipe(jeditor(function(json) {
+      const bundleJson = _.cloneDeep(json);
+
+      bundleJson.peerDependencies = _.cloneDeep(bundleJson.dependencies);
+      bundleJson.scripts = {};
+      bundleJson.dependencies = {};
+      bundleJson.devDependencies = {};
+
+      bundleJson.main = 'bundles/arranbartishAngularCliWidgets.umd.js';
+      bundleJson.module = 'index.js';
+      bundleJson.typings = 'index.d.ts';
+
+      return bundleJson;
+    }))
+    .pipe(gulp.dest("./aot")).on('end', copyLicenseFile);
 }
 
 function copyLicenseFile () {
