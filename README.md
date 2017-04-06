@@ -40,3 +40,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Simply install the plugin and configure your IDE to run with the wallaby config and the correct node version, __NOT__ the one that embedded in the IDE. 
  
 This is an example good configuration ![Image](https://cloud.githubusercontent.com/assets/979966/23509360/3557abac-ffa1-11e6-9380-e79386a14fd1.png)
+
+
+##  References 
+
+[getting-your-angular-2-library-ready-for-aot]: https://medium.com/@isaacplmann/getting-your-angular-2-library-ready-for-aot-90d1347bcad
+[making-your-angular-2-library-statically-analyzable-for-aot]: https://medium.com/@isaacplmann/making-your-angular-2-library-statically-analyzable-for-aot-e1c6f3ebedd5
+[how-to-create-an-angular-library]: http://www.dzurico.com/how-to-create-an-angular-library/
+[how-to-build-and-publish-an-angular-module]: https://medium.com/@cyrilletuzi/how-to-build-and-publish-an-angular-module-7ad19c0b4464
+[tree-shaking-angular2-production-build-rollup-javascript]: http://blog.mgechev.com/2016/06/26/tree-shaking-angular2-production-build-rollup-javascript/
