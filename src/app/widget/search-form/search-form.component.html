@@ -1,4 +1,5 @@
 <div class="row">
+  <b>Search for stuff</b>
   <form [formGroup]="searchForm" (ngSubmit)="search()">
     <div class="col-md-10">
       <input formControlName="terms" [(ngModel)]="terms" type="text" placeholder="Separate search terms by ," />
