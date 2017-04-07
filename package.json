@@ -1,6 +1,6 @@
 {
   "name": "arranbartish-angular-cli-widgets",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "license": "MIT",
   "description": "UI widgets produced for use with angular2 SPA's",
   "homepage": "https://github.com/arranbartish/angular-cli-widgets",
@@ -21,8 +21,8 @@
     "component"
   ],
   "bugs": {
-    "url" : "https://github.com/arranbartish/angular-cli-widgets/issues",
-    "email" : "arranbartish@hotmail.com"
+    "url": "https://github.com/arranbartish/angular-cli-widgets/issues",
+    "email": "arranbartish@hotmail.com"
   },
   "scripts": {
     "clean": "rimraf dist && rimraf aot",
