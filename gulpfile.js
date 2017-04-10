@@ -37,6 +37,15 @@ function copyPackageJsonFile () {
       const bundleJson = _.cloneDeep(json);
 
       bundleJson.peerDependencies = _.cloneDeep(bundleJson.dependencies);
+
+      // downgrading @angular/*** dependencies when translating them into peer dependencies
+      _.keys(bundleJson.peerDependencies).forEach(function (key) {
+        if (_.startsWith(key, "@angular/")) {
+          bundleJson.peerDependencies[key] = "^2.4.0";
+        }
+      });
+      bundleJson.peerDependencies["@angular/router"] = "^3.4.0";
+
       bundleJson.scripts = {};
       bundleJson.dependencies = {};
       bundleJson.devDependencies = {};
