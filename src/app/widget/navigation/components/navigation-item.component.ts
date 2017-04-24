@@ -1,7 +1,8 @@
-import {Component, Input} from '@angular/core';
-import {Location} from '@angular/common';
-import {TreeElement} from './valueObject/treeElement';
-import {TreeNode} from './valueObject/treeNode';
+import { Location } from '@angular/common';
+import { Component, Input } from '@angular/core';
+
+import { TreeElement } from '../valueObject/treeElement';
+import { TreeNode } from '../valueObject/treeNode';
 
 @Component({
     selector: 'app-nav-item',
