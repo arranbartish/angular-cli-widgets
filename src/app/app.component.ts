@@ -1,6 +1,7 @@
-import {Component} from '@angular/core';
-import {SearchOptions} from './widget/search-form/search-options';
-import {TreeElement} from './widget/navigation/valueObject/treeElement';
+import { Component } from '@angular/core';
+
+import { SearchOptions } from './widget/search-form/search-options';
+import { TreeElement } from './widget/navigation/valueObject/treeElement';
 
 @Component({
   selector: 'app-root',
