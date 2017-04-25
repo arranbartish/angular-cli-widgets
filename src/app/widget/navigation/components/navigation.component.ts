@@ -9,9 +9,5 @@ import { TreeElement } from '../valueObject/treeElement';
 })
 export class NavigationComponent {
     @Input()
-    public treeElements: TreeElement[];
-
-    constructor() {
-        this.treeElements = [];
-    }
+    public treeElements: TreeElement[] = [];
 }

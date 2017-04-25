@@ -1,15 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
+import { StoreModule, ActionReducer, combineReducers } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
-import {WidgetModule} from './widget/widget.module';
-import {RouterModule, Routes} from '@angular/router';
+import { WidgetModule } from './widget/widget.module';
+import { treeElements } from './widget/navigation/reducer/menu.reducer';
 
-
-const routes: Routes = [
-];
+const routes: Routes = [];
 
 @NgModule({
   declarations: [
@@ -20,9 +20,11 @@ const routes: Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes),
-    WidgetModule
+    WidgetModule,
+    StoreModule.provideStore({ treeElements })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
