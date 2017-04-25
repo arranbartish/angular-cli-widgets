@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
 
-import { type } from 'app/utilities/type';
+import { type } from '../../../utilities/type';
 import { TreeElement } from '../valueObject/treeElement';
 
 export const MenuAction = {
