@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { UtilitiesModule } from 'app/utilities/utilities.module';
+import { UtilitiesModule } from './../utilities/utilities.module';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NavigationComponent } from './navigation/components/navigation.component';
 import { NavigationItemComponent } from './navigation/components/navigation-item.component';

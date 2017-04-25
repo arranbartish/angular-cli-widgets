@@ -6,7 +6,7 @@ import { expect } from 'chai';
 
 import { SearchFormComponent, UNDEFINED_NAME, DEFAULT_TARGET } from './search-form.component';
 import { SearchOptions } from './search-options';
-import { UtilitiesModule } from 'app/utilities/utilities.module';
+import { UtilitiesModule } from './../../utilities/utilities.module';
 
 describe('SearchFormComponent', () => {
   let component: SearchFormComponent;
