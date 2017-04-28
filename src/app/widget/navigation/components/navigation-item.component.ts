@@ -1,5 +1,6 @@
 import { Location } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { URLSearchParams } from '@angular/http';
 
 import { TreeElement } from '../valueObject/treeElement';
 import { TreeNode } from '../valueObject/treeNode';
@@ -25,5 +26,21 @@ export class NavigationItemComponent {
 
     public isActiveNavItem(treeElmt: TreeElement): boolean {
         return treeElmt.targetUrl === this.location.path();
+    }
+
+    public toSafeUrl(treeElmtUrl: string = ''): string {
+        return treeElmtUrl.split('?')[0];
+    }
+
+    public toQueryParams(treeElmtUrl: string = ''): object {
+        const tokens = treeElmtUrl.split('?');
+        const result = { };
+
+        if (tokens.length > 1) {
+            new URLSearchParams(tokens[1]).paramsMap
+                .forEach((value: string[], key: string) => result[key] = value);
+        }
+
+        return result;
     }
 }

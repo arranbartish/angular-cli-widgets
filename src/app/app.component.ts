@@ -17,7 +17,7 @@ export class AppComponent {
   };
 
   treeElements: TreeElement[] = [
-    { title: 'A Link', targetUrl: '/a-uri', imageCssClass: 'glyphicon-font' },
+    { title: 'A Link', targetUrl: '/a-uri?q=abc&q=def', imageCssClass: 'glyphicon-font' },
     { title: 'B Link', targetUrl: '/b-uri', imageCssClass: 'glyphicon-bold' }
   ];
 }
