@@ -1,4 +1,5 @@
 import {type} from './type';
+import {expect} from 'chai';
 
 describe('type', () => {
 
