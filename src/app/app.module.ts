@@ -6,16 +6,21 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {WidgetModule} from './widget/widget.module';
 import {RouterModule, Routes} from '@angular/router';
-
+import {MaterialModule} from "@angular/material";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { LandingPageComponent } from './shell/landing-page/landing-page.component';
 
 const routes: Routes = [
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingPageComponent
   ],
   imports: [
+    MaterialModule,
+    BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     HttpModule,
