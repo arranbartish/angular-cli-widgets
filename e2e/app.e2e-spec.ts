@@ -10,6 +10,15 @@ describe('angular-cli-widgets App', () => {
   });
 
   it('should display message saying app works', () => {
+
+    // page.navigateTo();
+    // expect(page.getParagraphText()).to.eventually.contain('app works!');
+
+    var width = 800;
+    var height = 600;
+    browser.driver.manage().window().setSize(width, height);
+
+
     page.navigateTo();
     expect(page.getParagraphText()).to.eventually.contain('app works!');
   });
