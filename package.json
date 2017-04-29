@@ -25,10 +25,12 @@
     "email": "arranbartish@hotmail.com"
   },
   "scripts": {
-    "clean": "rimraf dist && rimraf aot",
+    "clean-aot": "rimraf aot",
+    "clean-dist": "rimraf dist",
+    "clean": "npm run clean-aot && npm run clean-dist",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run clean-dist && ng build",
     "test": "ng test",
     "lint": "ng lint",
     "pree2e": "webdriver-manager update --versions.chrome=2.28",
@@ -36,7 +38,7 @@
     "transpile": "ngc -p tsconfig.aot.json",
     "rollup": "rollup -c",
     "minify": "uglifyjs aot/bundles/arranbartishAngularCliWidgets.umd.js --screw-ie8 --compress --mangle --comments --output aot/bundles/arranbartishAngularCliWidgets.umd.min.js",
-    "package": "npm run clean && npm run transpile && gulp && npm run rollup && npm run minify"
+    "package": "npm run clean-aot && npm run transpile && gulp && npm run rollup && npm run minify"
   },
   "private": false,
   "dependencies": {
