@@ -12,6 +12,8 @@ import { LandingPageComponent } from './shell/landing-page/landing-page.componen
 import { ButtonsComponent } from './shell/buttons/buttons.component';
 import { Tool42ButtonComponent } from './widget/tool42-button/tool42-button.component';
 
+import {FlexLayoutModule} from '@angular/flex-layout';
+
 const routes: Routes = [
   { path: 'buttons', component: ButtonsComponent},
   { path: 'main', component: LandingPageComponent}
@@ -27,6 +29,7 @@ const routes: Routes = [
   imports: [
     MaterialModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     BrowserModule,
     FormsModule,
     HttpModule,
