@@ -13,6 +13,10 @@ describe('angular-cli-widgets App', () => {
     // page.navigateTo();
     // expect(page.getParagraphText()).to.eventually.contain('app works!');
 
+    var width = 800;
+    var height = 600;
+    browser.driver.manage().window().setSize(width, height);
+
     page.navigateTo();
     //assert.equal(browser.protractorImageComparison.checkScreen('landing-page'), 0);
 
