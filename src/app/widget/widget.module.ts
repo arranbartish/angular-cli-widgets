@@ -6,6 +6,7 @@ import { UtilitiesModule } from '../utilities/utilities.module';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NavigationItemComponent } from './navigation/navigation-item.component';
+import {Tool42ButtonComponent} from './tool42-button/tool42-button.component';
 
 @NgModule({
   imports: [
@@ -16,12 +17,14 @@ import { NavigationItemComponent } from './navigation/navigation-item.component'
   ],
   exports: [
     SearchFormComponent,
-    NavigationComponent
+    NavigationComponent,
+    Tool42ButtonComponent
   ],
   declarations: [
     SearchFormComponent,
     NavigationComponent,
-    NavigationItemComponent
+    NavigationItemComponent,
+    Tool42ButtonComponent
   ]
 })
 export class WidgetModule { }

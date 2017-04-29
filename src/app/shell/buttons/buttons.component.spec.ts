@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ButtonsComponent } from './buttons.component';
+import {NO_ERRORS_SCHEMA} from '@angular/core';
+import {expect} from 'chai';
 
 describe('ButtonsComponent', () => {
   let component: ButtonsComponent;
@@ -8,6 +10,7 @@ describe('ButtonsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      schemas: [NO_ERRORS_SCHEMA],
       declarations: [ ButtonsComponent ]
     })
     .compileComponents();
@@ -20,6 +23,6 @@ describe('ButtonsComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).to.exist;
   });
 });
