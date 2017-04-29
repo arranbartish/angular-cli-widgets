@@ -33,5 +33,6 @@ deploy:
   bucket: poc.styleguide.online
   skip_cleanup: true
   local-dir: dist
+  acl: public_read
 on:
   branch: master
