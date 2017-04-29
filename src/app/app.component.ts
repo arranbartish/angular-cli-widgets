@@ -8,9 +8,6 @@ import {TreeElement} from './widget/navigation/valueObject/treeElement';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  atomsSectionTitle = 'Atoms';
-  moleculesSectionTitle = 'Molecules';
-  organismsSectionTitle = 'Organisms';
 
   searchOptions: SearchOptions = {
     name: 'a-search',

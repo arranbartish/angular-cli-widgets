@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
+  atomsSectionTitle = 'Atoms';
+  moleculesSectionTitle = 'Molecules';
+  organismsSectionTitle = 'Organisms';
+
   constructor() { }
 
   ngOnInit() {
