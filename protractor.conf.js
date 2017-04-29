@@ -23,12 +23,17 @@ exports.config = {
       project: 'e2e/tsconfig.e2e.json'
     });
   },
-  onPrepare() {
-    const protractorImageComparison = require('protractor-image-comparison');
+  onPrepare: function() {
+    var chai = require('chai');
+    var chaiAsPromised = require("chai-as-promised");
+    var protractorImageComparison = require('protractor-image-comparison');
+
+    chai.use(chaiAsPromised);
+    global.chai = chai;
     browser. protractorImageComparison = new protractorImageComparison(
       {
         baselineFolder: 'e2e/baselines/',
-        screenshotPath: 'e2e/tmp/',
+        screenshotPath: 'dist-artifacts/comparisons/',
         autoSaveBaseline: true
       }
     );

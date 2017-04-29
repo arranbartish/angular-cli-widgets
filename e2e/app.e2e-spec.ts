@@ -10,12 +10,12 @@ describe('angular-cli-widgets App', () => {
   });
 
   it('should display message saying app works', () => {
-    // page.navigateTo();
-    // expect(page.getParagraphText()).to.eventually.contain('app works!');
-
     page.navigateTo();
-    // assert.equal(browser.protractorImageComparison.checkScreen('landing-page'), 0);
+    expect(page.getParagraphText()).to.eventually.contain('app works!');
+  });
 
-    expect(browser.protractorImageComparison.checkScreen('landing-page')).toEqual(0);
+  it('should be the same', () => {
+    page.navigateTo();
+    expect(browser.protractorImageComparison.checkScreen('landing-page')).to.eventually.equal(0);
   });
 });

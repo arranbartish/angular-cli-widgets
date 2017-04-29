@@ -58,7 +58,6 @@
     "@angular/compiler-cli": "^4.0.0",
     "@types/chai-as-promised": "0.0.30",
     "@types/chai-string": "^1.1.30",
-    "@types/jasmine": "^2.5.47",
     "@types/mocha": "^2.2.40",
     "@types/node": "~6.0.60",
     "@types/sinon": "^1.16.35",
