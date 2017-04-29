@@ -58,6 +58,7 @@
   "devDependencies": {
     "@angular/cli": "1.0.0",
     "@angular/compiler-cli": "^4.0.0",
+    "@angular/flex-layout": "^2.0.0-beta.8",
     "@types/chai-as-promised": "0.0.30",
     "@types/chai-string": "^1.1.30",
     "@types/jasmine": "^2.5.47",

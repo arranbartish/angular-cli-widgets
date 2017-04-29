@@ -1,5 +1,5 @@
 .t42-btn-primary--active {
-  background-color: #4CAF50; /* Green */
+  background-color: #ff6600; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -21,7 +21,7 @@
 }
 
 .t42-btn-primary--hover {
-  background-color: #009999;/* Green */
+  background-color: #cc3300;/* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -32,8 +32,19 @@
 }
 
 .t42-btn-secondary--active {
-  background-color: #ff0000; /* Green */
-  border: none;
+  background-color: #ffffff; /* Green */
+  color:#ff6600;
+  border: 1px solid #ff6600;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.t42-btn-secondary--hover {
+  background-color: #cc3300;/* Green */
+  border: 1px solid #cc3300;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -43,9 +54,9 @@
 }
 
 .t42-btn-secondary--disabled {
-  background-color: #ff9966; /* Green */
-  border: none;
-  color: white;
+  background-color: #ffffff; /* Green */
+  color:#999966;
+  border: 1px solid #999966;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
