@@ -31,7 +31,7 @@ deploy:
   secret_access_key:
     secure: HktiS/tHorMz/svkPKbRurE3loF+Vxf53AIKXQSQQHglfo+agnp02/RYFKNULZs45vtA1Fp34fiACxvv/P2PArXYWQxg6znjWvtuIjxN0iYurB1zYuzZq60q+z6iZcbPGbowSvH0tKZZCRtzo1bmXeswIuwjhhSIvM0OvUwSYUtVWVudKJF0B8836EtXUZ2Dc5MtBN3W5/e6Nm2ILEHZ5XgJ/ZOqkkyCsaTa1H+4FdwlWLJpHof5fVm0hdjrBWHqNDCBzz46fMSIJfhX6Tw+TPqX2EPn8KRChhjBbAUjkiwOhXBI92y0JkxWzNmn0x+VlQrskih2ATQccWv3hpjUbrDIVcbChFJ8EGKlfRRUkFFC0KOEkUSXs84TLo0ifXKanYyvviTSRvp/pmsbTknbEw0FVsTQ1icaq5HEjEUT/qel6jJQH1lG14nin18klCHU907EMWANlB/9f+JlBRWH804dr6inqxvH+GEnNHjSy2VTFJfeVtBu+fP+JuDb0hZfZ6f/OS+mZ86lFVpfto3cdHmvWOubCwBmyRCT866Dj6SnBgyfxTDH5FNRfEjFhTrU9CdAfYKnVRrwuoNa1j7zRD3vGmmrNeQ1a3wLFlfD0oXyX/T+aUFErQLV6VhC8Ij3Zt+4y9BYwKsPd0JavmrDfgam+k0O6QLK1y+/AGdiGVI=
   bucket: poc.styleguide.online
-  skip_cleanup: false
+  skip_cleanup: true
   local-dir: dist
 on:
   branch: master
