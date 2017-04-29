@@ -5,7 +5,7 @@ export class AngularCliWidgetsPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
-  }
+  // getParagraphText() {
+  //   return element(by.css('app-root h1')).getText();
+  // }
 }
