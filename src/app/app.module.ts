@@ -15,6 +15,7 @@ import { Tool42ButtonComponent } from './widget/tool42-button/tool42-button.comp
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 const routes: Routes = [
+  {path: '', component: LandingPageComponent},
   { path: 'buttons', component: ButtonsComponent},
   { path: 'main', component: LandingPageComponent}
 ];
