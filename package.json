@@ -86,6 +86,7 @@
     "karma-sinon-chai": "^1.2.4",
     "mocha": "^3.2.0",
     "protractor": "~5.1.0",
+    "protractor-image-comparison": "^1.2.3",
     "rimraf": "^2.6.1",
     "rollup": "^0.41.6",
     "rollup-plugin-commonjs": "^8.0.2",

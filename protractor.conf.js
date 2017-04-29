@@ -1,7 +1,6 @@
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
-
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
@@ -12,14 +11,14 @@ exports.config = {
   },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
-  framework: 'mocha',
-  mochaOpts: {
-    reporter: "spec",
-    slow: 3000,
-    ui: 'bdd',
-    timeout: 30000
+  framework: 'jasmine',
+  jasmineNodeOpts: {
+    showColors: true,
+    defaultTimeoutInterval: 30000,
+    print: function () {
+    }
   },
-  beforeLaunch: function() {
+  beforeLaunch: function () {
     require('ts-node').register({
       project: 'e2e/tsconfig.e2e.json'
     });
@@ -27,7 +26,16 @@ exports.config = {
   onPrepare: function() {
     var chai = require('chai');
     var chaiAsPromised = require("chai-as-promised");
+    var protractorImageComparison = require('protractor-image-comparison');
+
     chai.use(chaiAsPromised);
     global.chai = chai;
+    browser. protractorImageComparison = new protractorImageComparison(
+      {
+        baselineFolder: 'e2e/baselines/',
+        screenshotPath: 'dist-artifacts/comparisons/',
+        autoSaveBaseline: true
+      }
+    );
   }
 };
