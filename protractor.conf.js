@@ -1,10 +1,17 @@
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
+let _ = require('lodash');
+
+let suiteLocation = (_.isEmpty(process.env.SUITE_LOCATION))? 'e2e' : _.trim(process.env.SUITE_LOCATION);
+
+console.info('Running protractor suite ['+suiteLocation+']');
+
+
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
-    './e2e/**/*.e2e-spec.ts'
+    './'+suiteLocation+'/**/*.e2e-spec.ts'
   ],
   capabilities: {
     'browserName': 'chrome'
@@ -32,8 +39,8 @@ exports.config = {
     global.chai = chai;
     browser. protractorImageComparison = new protractorImageComparison(
       {
-        baselineFolder: 'e2e/baselines/',
-        screenshotPath: 'dist-artifacts/comparisons/',
+        baselineFolder: 'styles/baselines/',
+        screenshotPath: 'styles-artifacts/comparisons/',
         autoSaveBaseline: true
       }
     );
