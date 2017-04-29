@@ -9,18 +9,26 @@ import {RouterModule, Routes} from '@angular/router';
 import {MaterialModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { LandingPageComponent } from './shell/landing-page/landing-page.component';
+import { ButtonsComponent } from './shell/buttons/buttons.component';
+
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 const routes: Routes = [
+  {path: '', component: LandingPageComponent},
+  { path: 'buttons', component: ButtonsComponent},
+  { path: 'main', component: LandingPageComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ButtonsComponent
   ],
   imports: [
     MaterialModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     BrowserModule,
     FormsModule,
     HttpModule,

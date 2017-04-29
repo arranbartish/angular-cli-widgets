@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
-
   atomsSectionTitle = 'Atoms';
   moleculesSectionTitle = 'Molecules';
   organismsSectionTitle = 'Organisms';
