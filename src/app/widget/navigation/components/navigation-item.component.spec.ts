@@ -118,18 +118,18 @@ describe('NavigationItemComponent', () => {
     });
 
     it('will keep the query string parameters only, if one', () => {
-        var result = component.toQueryParams('/search?q=abc');
-        expect(JSON.stringify(result)).to.equals(JSON.stringify({ q: [ 'abc' ] }));
+        const result = component.toQueryParams('/search?q=abc');
+        expect(JSON.stringify(result)).to.equals(JSON.stringify({ q: ['abc'] }));
     });
 
     it('will keep the query string parameters only, if many', () => {
-        var result = component.toQueryParams('/search?q=abc&q=def&page=2');
-        expect(JSON.stringify(result)).to.equals(JSON.stringify({ q: [ 'abc', 'def' ], page: [ '2' ] }));
+        const result = component.toQueryParams('/search?q=abc&q=def&page=2');
+        expect(JSON.stringify(result)).to.equals(JSON.stringify({ q: ['abc', 'def'], page: ['2'] }));
     });
 
     it('will keep the query string parameters only, if none', () => {
-        var result = component.toQueryParams('/search');
-         expect(JSON.stringify(result)).to.equals(JSON.stringify({ }));
+        const result = component.toQueryParams('/search');
+        expect(JSON.stringify(result)).to.equals(JSON.stringify({}));
     });
 });
 
