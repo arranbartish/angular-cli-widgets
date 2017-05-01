@@ -47,3 +47,14 @@ deploy:
     local-dir: aot
     on:
       tags: true
+  - provider: s3
+    access_key_id:
+      secure: cbFBWrc6wt+EYBdWwwmzne+yOUNSsaq7w1wxMmHDdmP1G8Ct5TSsM5V/ZnRGCWq9IM+vUSVdX6pc16AbRR/32pcA6Pznbeic1teIzKo7WhO1c1QQaHSFXt8/NTARNeijHHr6IjOqFW8VyVnm1cKX4S1E+5EGfeRUElYnApSss0jLBu+qHN/9xqYpae0MdZpUEhjI7c38ugXYiXZsirBb8yl5z3L/ogWEV3o0pXbhhNHGOPWTE2YUiK8ELuW+asPcVONCV33zTtnvwqg4O5tytcUJFh8wmJsv3njj0egtcNkakP0zO2KNMo+U2tRn9O4UkUdYb9B7mD+oNnsVsf6gEUgOxUvSOabYY7/MxaTgqZe2NqezaD5drwE38I3634BRYL/ZmRXLzntaFtsfeg29KdlJEMkD3njU4pOGGKraLleA+1otRHbjlLnYfKLYTz8cfuctgG0bfmB6atLQCYfxyFUYeYhSLT67nY/40bj4/vEbiL9yuYbz1hVSRcJhRIKFEACpOMWkt8DgyFGjjd6pP5kE6r5Fu7XXfsqiAWjXsjPLEI0vD5MTfX/EdX5HHDZymBZMYG9KYPJh6zvErah9jz7SrJl26bOL4ILDWxz9EV+gZwIAIDSJlQ7ItuuPRwC8zBj8gxFZhJYGD70OFYUCpaf+JLPTL17WoE5802q2gRg=
+    secret_access_key:
+      secure: H+bFS1G2XPEHT+MdO6HtOyP1K9gQB4JI3RCGkYqEv0jq1D128mMcFu6YlSf4fyOJYOKxhoQPC1zZe/MouO+P0cG41LRnrMgmJI3p/YptExieS6CvTky36gmg4cN6aXVucuRQl0ipvl+MekkJzHonkOHVUu8ylK6V/G0D+mWZVfLVnWnAtMMxr3jWcJoeBHzPsslwgpGMzZzR43FaHbhpDP1CqYOrIdw9+WFbxKAldGq0wsWxJQeGN14OJeSOgY/dyClvAIhabPdVd5oGI2FXjIFmyIyy8Qfv2+4fqtlKbATC+9vTg60FinZKjvpCnkSCpG3UqB2WcyM499aJcT3hgfmA2pmo4oOaAT3rpmL22mOvPi517eVCCpJVLvRLTUktMCTzzzjhzOj0t/C2S4BuOoP8M4dYuymIO04p6+T/0Gnyz+Sf9os4dv1h1FH8McZGAOOrAnWM4WWfDj1pnFc4RgYW6JQB7yHLxS+ti5iDScee6mPrfIGukEZJTCfm9GkE0r183/t9yTEBwLpJXH438BOmXL1rvXjJ1ynPk7ego6mHJb+par7UP5PMKUhDKdkuytCRKy5gVsn9fO+yVZYUypJeB1mYPReRViIG9SXCagPgc18suOvnS0fQllPtJ66rzVLzfuLOFPMU4e3fNr8hI/OMr8jvJPDXQl6LQnxyrRs=
+    bucket: latest.styleguide.online
+    skip_cleanup: true
+    local-dir: dist
+    acl: public_read
+    on:
+      tags: true
