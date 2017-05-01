@@ -1,22 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MaterialModule } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
+import { StoreModule, ActionReducer, combineReducers } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
-import {WidgetModule} from './widget/widget.module';
-import {RouterModule, Routes} from '@angular/router';
-import {MaterialModule} from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { LandingPageComponent } from './shell/landing-page/landing-page.component';
 import { ButtonsComponent } from './shell/buttons/buttons.component';
-
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { LandingPageComponent } from './shell/landing-page/landing-page.component';
+import { treeElements } from './widget/navigation/reducer/menu.reducer';
+import { WidgetModule } from './widget/widget.module';
 
 const routes: Routes = [
-  {path: '', component: LandingPageComponent},
-  { path: 'buttons', component: ButtonsComponent},
-  { path: 'main', component: LandingPageComponent}
+  { path: '', component: LandingPageComponent },
+  { path: 'buttons', component: ButtonsComponent },
+  { path: 'main', component: LandingPageComponent }
 ];
 
 @NgModule({
@@ -33,9 +34,11 @@ const routes: Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes),
-    WidgetModule
+    WidgetModule,
+    StoreModule.provideStore({ treeElements })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
