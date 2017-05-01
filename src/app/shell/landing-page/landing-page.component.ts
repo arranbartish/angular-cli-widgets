@@ -10,8 +10,10 @@ export class LandingPageComponent implements OnInit {
   moleculesSectionTitle = 'Molecules';
   organismsSectionTitle = 'Organisms';
 
+
   constructor() {
   }
+
 
   ngOnInit() {
   }

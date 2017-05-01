@@ -23,7 +23,6 @@ import { Tool42ContactUsComponent } from './widget/tool42-contact-us/tool42-cont
 import { ContactUsComponent } from './shell/contact-us/contact-us.component';
 import { HeadingsComponent } from './shell/headings/headings.component';
 import { Tool42HeadingComponent } from './widget/tool42-heading/tool42-heading.component';
-
 const routes: Routes = [
   {path: '', component: LandingPageComponent},
   { path: 'buttons', component: ButtonsComponent},

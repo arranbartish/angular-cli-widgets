@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: #f7f7f6;
+}
+
+h1{
+  color: #707070;
+  margin-top: 10px;
+}
+
+section{
+  border-top: 1px solid #707070;
+  padding: 10px 0 10px 0;
+}
+
+.logo-wrp{
+  height: 68px;
+  padding: 10px 0 10px 0;
+}
+
+.logo-img{
+  float: right;
+}
+
+md-card{
+  margin: 5px 0 5px 0;
+  cursor: pointer;
+}
