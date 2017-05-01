@@ -4,7 +4,6 @@
 </div>
 <a routerLink="/main">Back</a>
 
-
 <!--<section>
   <h2>SHAPES</h2>
   <h3>Default Size</h3>
@@ -13,36 +12,22 @@
   <button type="button" class="btn btn-default" >Label</button>
   <h3>Slim Size</h3>
   <button type="button" class="btn btn-default" style="height:30px;">Label</button>
-
 </section>-->
-<h1> Buttons</h1>
 
-
-
+<h1>Form Input Elements</h1>
 <section>
 
-<h3>Primary Button</h3>
+  <h3>Primary Form</h3>
   <div fxLayout="row" fxLayoutAlign="space-around center" >
-
-    <app-tool42-button type="primary" state="active" text="active"></app-tool42-button>
-
-    <app-tool42-button type="primary" state="hover" text="hover"></app-tool42-button>
-
-    <app-tool42-button type="primary" state="disabled" text="disabled"></app-tool42-button>
+   <app-tool42-form-input-field type="primary" buttonText="Button" inputPlaceholder="Enter text"></app-tool42-form-input-field>
 
   </div>
-<br>
-<h3>Secondary Button</h3>
+  <br>
+  <h3>Secondary Form</h3>
   <div fxLayout="row" fxLayoutAlign="space-around center" >
-
-    <app-tool42-button type="secondary" state="active" text="active"></app-tool42-button>
-
-    <app-tool42-button type="secondary" state="hover" text="hover"></app-tool42-button>
-
-    <app-tool42-button type="secondary" state="disabled" text="disabled"></app-tool42-button>
+    <app-tool42-form-input-field type="secondary" buttonText="Button" inputPlaceholder="Enter text"></app-tool42-form-input-field>
   </div>
 </section>
-
 
 <!--<section style = "background-color: #999966;">
   <h2>COLORS ON DARK BACKGROUND</h2>

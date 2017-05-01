@@ -8,6 +8,9 @@
   display: inline-block;
   font-size: 16px;
 }
+.t42-btn-primary--active:hover{
+  background-color: #cc3300;
+}
 
 .t42-btn-primary--disabled {
   background-color: #999966;/* Green */
@@ -40,6 +43,9 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+.t42-btn-secondary--active:hover{
+  background-color: #cc3300;
 }
 
 .t42-btn-secondary--hover {

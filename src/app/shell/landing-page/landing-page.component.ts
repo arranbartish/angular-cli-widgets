@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -10,7 +10,8 @@ export class LandingPageComponent implements OnInit {
   moleculesSectionTitle = 'Molecules';
   organismsSectionTitle = 'Organisms';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
