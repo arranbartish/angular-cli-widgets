@@ -9,17 +9,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { StoreModule, ActionReducer, combineReducers } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
-import {WidgetModule} from './widget/widget.module';
-import { LandingPageComponent } from './shell/landing-page/landing-page.component';
 import { ButtonsComponent } from './shell/buttons/buttons.component';
-
-
+import { LandingPageComponent } from './shell/landing-page/landing-page.component';
+import { treeElements } from './widget/navigation/reducer/menu.reducer';
+import { WidgetModule } from './widget/widget.module';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'buttons', component: ButtonsComponent },
   { path: 'main', component: LandingPageComponent }
-]
+];
 
 @NgModule({
   declarations: [

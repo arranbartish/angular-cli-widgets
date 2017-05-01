@@ -43,6 +43,7 @@
   },
   "private": false,
   "dependencies": {
+    "@angular/animations": "4.0.x",
     "@angular/common": "4.0.x",
     "@angular/compiler": "4.0.x",
     "@angular/core": "4.0.x",
