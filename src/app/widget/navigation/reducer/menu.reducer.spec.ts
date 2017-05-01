@@ -6,7 +6,7 @@ import { TreeElement } from '../valueObject/treeElement';
 import { MenuActionFactory } from '../actions/menu.action';
 import { WidgetModule } from '../../widget.module';
 import { MenuState } from '../store/menu.state';
-import { treeElements } from '../reducer/menu.reducer'
+import { treeElements } from '../reducer/menu.reducer';
 
 describe('menu reducer', () => {
 
