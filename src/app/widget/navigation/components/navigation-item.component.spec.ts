@@ -1,5 +1,5 @@
 import { Location, LocationStrategy } from '@angular/common';
-import { NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
+import { NO_ERRORS_SCHEMA, DebugElement, Component } from '@angular/core';
 import { TestBed, async, ComponentFixture, inject } from '@angular/core/testing';
 import { expect } from 'chai';
 import * as _ from 'lodash';
@@ -111,6 +111,25 @@ describe('NavigationItemComponent', () => {
                 expect(component.isActiveNavItem(elmt)).to.equal(result.isActive);
             });
         }));
+    });
+
+    it('will truncate the query string parameters', () => {
+        expect(component.toSafeUrl('/search?q=abc')).to.equals('/search');
+    });
+
+    it('will keep the query string parameters only, if one', () => {
+        var result = component.toQueryParams('/search?q=abc');
+        expect(JSON.stringify(result)).to.equals(JSON.stringify({ q: [ 'abc' ] }));
+    });
+
+    it('will keep the query string parameters only, if many', () => {
+        var result = component.toQueryParams('/search?q=abc&q=def&page=2');
+        expect(JSON.stringify(result)).to.equals(JSON.stringify({ q: [ 'abc', 'def' ], page: [ '2' ] }));
+    });
+
+    it('will keep the query string parameters only, if none', () => {
+        var result = component.toQueryParams('/search');
+         expect(JSON.stringify(result)).to.equals(JSON.stringify({ }));
     });
 });
 
