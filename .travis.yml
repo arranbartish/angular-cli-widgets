@@ -19,7 +19,6 @@ install:
   - npm install
   - npm install codecov
 script:
-  - npm run ng test -- --single-run=true --browsers Chrome --code-coverage
   - ./node_modules/codecov/bin/codecov
   - npm run e2e
   - npm run lint
