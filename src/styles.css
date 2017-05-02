@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+
+body{
   background-color: #f7f7f6;
 }
 
-h1 {
+h1{
   color: #707070;
   margin-top: 10px;
 }
@@ -12,18 +13,15 @@ h2 {
   color: #707070;
 }
 
-
-
 section {
   border-top: 1px solid #707070;
   padding: 10px 0 10px 0;
 }
 
-.logo-wrp {
+.logo-wrp{
   height: 68px;
   padding: 10px 0 10px 0;
 }
-
 .logo-img {
   float: right;
 }
@@ -35,7 +33,3 @@ md-card {
   border: 1px solid #f7f7f6;
   cursor: pointer;
 }
-
-
-
-

@@ -5,7 +5,7 @@
 /tmp
 /out-tsc
 /aot
-/dist-artifacts
+/styles-artifacts
 
 # dependencies
 /node_modules

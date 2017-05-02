@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Tool42LabelComponent } from './tool42-label.component';
+import {expect} from 'chai';
+import {NO_ERRORS_SCHEMA} from '@angular/core';
 
 describe('Tool42LabelComponent', () => {
   let component: Tool42LabelComponent;
@@ -8,6 +10,7 @@ describe('Tool42LabelComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      schemas: [NO_ERRORS_SCHEMA],
       declarations: [ Tool42LabelComponent ]
     })
     .compileComponents();
@@ -20,6 +23,6 @@ describe('Tool42LabelComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).to.exist;
   });
 });

@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Tool42InputComponent } from './tool42-input.component';
+import {expect} from 'chai';
+import {NO_ERRORS_SCHEMA} from '@angular/core';
 
 describe('Tool42InputComponent', () => {
   let component: Tool42InputComponent;
@@ -8,6 +10,7 @@ describe('Tool42InputComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      schemas: [NO_ERRORS_SCHEMA],
       declarations: [ Tool42InputComponent ]
     })
     .compileComponents();
@@ -20,6 +23,6 @@ describe('Tool42InputComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).to.exist;
   });
 });

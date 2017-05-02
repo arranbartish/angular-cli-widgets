@@ -1,11 +1,11 @@
-import {Component, Input, OnChanges, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-tool42-input',
   templateUrl: './tool42-input.component.html',
   styleUrls: ['./tool42-input.component.scss']
 })
-export class Tool42InputComponent implements OnChanges {
+export class Tool42InputComponent implements OnInit {
   @Input() height: string;
   @Input() type: string;
   @Input() placeHolder: string;
@@ -15,7 +15,7 @@ export class Tool42InputComponent implements OnChanges {
   constructor() {
   }
 
-  ngOnChanges() {
+  ngOnInit() {
     this.style = this.height + ' px;';
     switch (this.type) {
       case 'primary':

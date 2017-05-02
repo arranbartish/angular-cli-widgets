@@ -4,7 +4,7 @@
 module.exports = function (config) {
   config.set({
     basePath: '',
-    frameworks: ['mocha', 'chai', 'sinon-chai', '@angular/cli'],
+    frameworks: ['mocha', '@angular/cli'],
     plugins: [
       require('karma-mocha'),
       require('karma-chai'),
@@ -41,15 +41,15 @@ module.exports = function (config) {
       reporters: ['text'],
       thresholds: {
         global: {
-          statements: 98,
-          branches: 76.67,
-          lines: 91.89,
+          statements: 89.57,
+          branches: 63.89,
+          lines: 87.5,
           functions: 91.89
         },
         each: {
-          statements: 90,
-          branches: 50,
-          lines: 88.89,
+          statements: 45.45,
+          branches: 0,
+          lines: 40,
           functions: 66.67
         }
       }

@@ -2,24 +2,19 @@ import { AngularCliWidgetsPage } from './app.po';
 import {browser} from 'protractor';
 const expect = global['chai'].expect;
 
-describe('angular-cli-widgets App', () => {
+describe('angular-cli-widgets styles', () => {
   let page: AngularCliWidgetsPage;
 
   beforeEach(() => {
     page = new AngularCliWidgetsPage();
   });
 
-  it('should display message saying app works', () => {
-
-    // page.navigateTo();
-    // expect(page.getParagraphText()).to.eventually.contain('app works!');
-
+  it('Landing page will be unchanged', () => {
     var width = 800;
     var height = 600;
     browser.driver.manage().window().setSize(width, height);
 
-
     page.navigateTo();
-    expect(true).to.equal(true);
+    expect(browser.protractorImageComparison.checkScreen('landing-page')).to.eventually.equal(0);
   });
 });

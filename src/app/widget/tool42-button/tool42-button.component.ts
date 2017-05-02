@@ -11,7 +11,6 @@ export class Tool42ButtonComponent implements OnInit {
   @Input() width: string;
   @Input() height: string;
   @Input() text: string;
-
   className: String;
 
   constructor() {
@@ -38,7 +37,6 @@ export class Tool42ButtonComponent implements OnInit {
       case 'secondarydisabled' :
         this.className = 't42-btn-secondary--disabled';
         break;
-
 
     }
 

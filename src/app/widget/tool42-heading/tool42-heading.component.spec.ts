@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Tool42HeadingComponent } from './tool42-heading.component';
+import {expect} from 'chai';
+import {NO_ERRORS_SCHEMA} from '@angular/core';
 
 describe('Tool42HeadingComponent', () => {
   let component: Tool42HeadingComponent;
@@ -8,6 +10,7 @@ describe('Tool42HeadingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      schemas: [NO_ERRORS_SCHEMA],
       declarations: [ Tool42HeadingComponent ]
     })
     .compileComponents();
@@ -20,6 +23,6 @@ describe('Tool42HeadingComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).to.exist;
   });
 });
