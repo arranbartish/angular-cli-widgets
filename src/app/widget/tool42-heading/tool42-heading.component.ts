@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class Tool42HeadingComponent implements OnInit {
   @Input() text: string;
   @Input() type: string;
+  @Input() color: string;
   className: string;
 
   constructor() {

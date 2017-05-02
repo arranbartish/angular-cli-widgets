@@ -8,7 +8,8 @@ import {Component, Input, OnInit} from '@angular/core';
 export class Tool42ButtonComponent implements OnInit {
   @Input() type: string;
   @Input() state: string;
-  @Input() size: string;
+  @Input() width: string;
+  @Input() height: string;
   @Input() text: string;
 
   className: String;
