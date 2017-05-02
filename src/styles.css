@@ -24,5 +24,8 @@ section{
 
 md-card{
   margin: 5px 0 5px 0;
+  height: 50px;
+  line-height:8px;
+  border: 1px solid #f7f7f6;
   cursor: pointer;
 }

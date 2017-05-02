@@ -4,24 +4,33 @@
          src="src/assets/logo_tool42.svg">
   </div>
   <section>
+    <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="2%">
+      <md-card style="background-color: #555C5C; border:1px solid #555C5C;color:#ffffff;">publish ccp</md-card>
+      <md-card style="background-color: #AAADAD; border:1px solid #555C5C;color:#ffffff;">Link to current style</md-card>
+      <md-card style="background-color: #AAADAD; border:1px solid #555C5C;color:#ffffff;">Duplicate this library</md-card>
+      <md-card style="background-color: #AAADAD; border:1px solid #555C5C;color:#ffffff;">Import new element</md-card>
+    </div>
+  </section>
+  <section>
     <h1>
       {{atomsSectionTitle}}
     </h1>
 
-
-    <a routerLink="/headings"><md-card>Headings</md-card></a>
-    <a routerLink="/labels"><md-card>Labels</md-card></a>
-    <a routerLink="/buttons"><md-card>Buttons</md-card></a>
-    <a routerLink="/input-element"><md-card>Inputs</md-card></a>
+    <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="2%">
+      <a routerLink="/headings"><md-card>Headings</md-card></a>
+      <a routerLink="/labels"><md-card>Labels</md-card></a>
+      <a routerLink="/buttons"><md-card>Buttons</md-card></a>
+      <a routerLink="/input-element"><md-card>Inputs</md-card></a>
+    </div>
   </section>
 
   <section>
     <h1>
       {{moleculesSectionTitle}}
     </h1>
-
-    <a routerLink="/forms"><md-card>Form Input field</md-card></a>
-
+    <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="2%">
+      <a routerLink="/forms"><md-card>Form Input field</md-card></a>
+    </div>
 
   </section>
   <section>
@@ -29,8 +38,8 @@
       {{organismsSectionTitle}}
     </h1>
 
-
-    <a routerLink="/contact-us"><md-card>Contact Us Form</md-card></a>
-
+    <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="2%">
+      <a routerLink="/contact-us"><md-card>Contact Us Form</md-card></a>
+    </div>
   </section>
 </div>
