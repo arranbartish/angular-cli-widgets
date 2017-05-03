@@ -1,7 +1,7 @@
 import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
-  selector: 'tek-label',
+  selector: 'app-tek-label',
   templateUrl: './tek-label.component.html',
   styleUrls: ['./tek-label.component.scss']
 })

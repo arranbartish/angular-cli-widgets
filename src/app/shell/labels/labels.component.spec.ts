@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {NO_ERRORS_SCHEMA} from '@angular/core';
-import {expect} from 'chai';
-import {LabelsComponent} from "./labels.component";
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { expect } from 'chai';
+import { LabelsComponent } from './labels.component';
 
 describe('LabelsComponent', () => {
   let component: LabelsComponent;
@@ -11,7 +11,7 @@ describe('LabelsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],
-      declarations: [ LabelsComponent ]
+      declarations: [LabelsComponent]
     })
       .compileComponents();
   }));

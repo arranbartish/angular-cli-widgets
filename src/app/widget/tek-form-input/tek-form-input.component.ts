@@ -1,25 +1,31 @@
-import {Component, OnInit, Input} from '@angular/core';
-import {TekLabelComponent} from "../tek-label/tek-label.component";
+import { Component, OnInit, Input } from '@angular/core';
+import { TekLabelComponent } from '../tek-label/tek-label.component';
 
 @Component({
-  selector: 'tek-form-input',
+  selector: 'app-tek-form-input',
   templateUrl: './tek-form-input.component.html',
   styleUrls: ['./tek-form-input.component.scss']
 })
 export class TekFormInputComponent implements OnInit {
-  @Input() type: string;
-  @Input() label: string;
-  isFocused: boolean = false;
-  constructor() { }
+  @Input()
+  type: string;
+
+  @Input()
+  label: string;
+
+  isFocused = false;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
-  onFocus(){
+  onFocus() {
     this.isFocused = true;
   }
 
-  onBlur(){
+  onBlur() {
     this.isFocused = false;
   }
 }

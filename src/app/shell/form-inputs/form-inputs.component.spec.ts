@@ -1,6 +1,8 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FormInputsComponent } from './form-inputs.component';
+import {expect} from 'chai';
 
 describe('FormInputsComponent', () => {
   let component: FormInputsComponent;
@@ -8,7 +10,8 @@ describe('FormInputsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormInputsComponent ]
+      declarations: [ FormInputsComponent ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
@@ -20,6 +23,6 @@ describe('FormInputsComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).to.be.ok;
   });
 });

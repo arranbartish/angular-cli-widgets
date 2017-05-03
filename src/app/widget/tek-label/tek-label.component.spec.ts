@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TekLabelComponent } from './tek-label.component';
+import {expect} from 'chai';
 
 describe('TekLabelComponent', () => {
   let component: TekLabelComponent;
@@ -20,6 +21,6 @@ describe('TekLabelComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).to.be.ok;
   });
 });

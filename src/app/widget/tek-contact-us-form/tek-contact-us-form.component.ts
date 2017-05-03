@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'tek-contact-us-form',
+  selector: 'app-tek-contact-us-form',
   templateUrl: './tek-contact-us-form.component.html',
   styleUrls: ['./tek-contact-us-form.component.scss']
 })

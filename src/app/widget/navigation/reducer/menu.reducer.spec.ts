@@ -21,7 +21,7 @@ describe('menu reducer', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [WidgetModule, StoreModule.provideStore({ treeElements })],
+            imports: [WidgetModule, StoreModule.provideStore({ treeElements })]
         });
     });
 

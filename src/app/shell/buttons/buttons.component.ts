@@ -12,7 +12,7 @@ export class ButtonsComponent implements OnInit {
   ngOnInit() {
 
   }
-  onBtnClick(message){
+  onBtnClick(message) {
     alert(message);
   }
 }

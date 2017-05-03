@@ -1,6 +1,8 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TekFormInputComponent } from './tek-form-input.component';
+import {expect} from 'chai';
 
 describe('TekFormInputComponent', () => {
   let component: TekFormInputComponent;
@@ -8,7 +10,8 @@ describe('TekFormInputComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TekFormInputComponent ]
+      declarations: [ TekFormInputComponent ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
@@ -20,6 +23,6 @@ describe('TekFormInputComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).to.be.ok;
   });
 });
