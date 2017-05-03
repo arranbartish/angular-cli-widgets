@@ -8,23 +8,40 @@
       {{atomsSectionTitle}}
     </h1>
 
-    <md-card>Labels</md-card>
-    <a routerLink="/buttons"><md-card>Buttons</md-card></a>
-    <md-card>Inputs</md-card>
+    <div fxLayout="row">
+      <a routerLink="/labels"
+         fxFlex="20">
+        <md-card>Labels</md-card>
+      </a>
+      <a routerLink="/buttons"
+         fxFlex="20">
+        <md-card>Buttons</md-card>
+      </a>
+    </div>
   </section>
   <section>
     <h1>
       {{moleculesSectionTitle}}
     </h1>
 
-    <md-card>Form Input field</md-card>
+    <div fxLayout="row">
+      <a routerLink="/form-inputs"
+         fxFlex="20">
+        <md-card>Form Inputs</md-card>
+      </a>
+    </div>
 
   </section>
   <section>
     <h1>
       {{organismsSectionTitle}}
     </h1>
-
-    <md-card>Contact Up Form</md-card>
+    <div fxLayout="row">
+      <a routerLink="/contact-us-form"
+         fxFlex="20">
+        <md-card>Contact Us Form</md-card>
+      </a>
+    </div>
   </section>
+
 </div>

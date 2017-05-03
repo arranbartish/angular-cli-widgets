@@ -1,0 +1,36 @@
+.tek-form-input{
+  input{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 18px;
+    background: white;
+    height: 40px;
+    width: 100%;
+    &[disabled] {
+      background: transparent;
+    }
+  }
+  input:focus{
+    outline: none;
+  }
+}
+
+.tek-form-input{
+  margin-bottom: 20px;
+}
+
+.form-input-underline-block{
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.form-input-underline{
+  height: 2px;
+  width: 0;
+  transition: width 0.5s;
+  background-color: #ff6600;
+  &[is-focused=true]{
+    width: 100%;
+  }
+}

@@ -1,56 +1,56 @@
-<div class="logo-wrp">
-  <img class="logo-img"
-       src="src/assets/logo_tool42.svg">
+<div class="buttons-shell">
+  <div fxLayout="row"
+       fxLayoutAlign="space-between center">
+    <a class="breadcrumbs"
+       routerLink="/main">Back</a>
+    <div class="logo-wrp">
+      <img class="logo-img"
+           src="src/assets/logo_tool42.svg">
+    </div>
+  </div>
+
+  <section>
+    <h1> Buttons</h1>
+    <div fxLayout="row"
+         fxLayoutAlign="start">
+      <tek-button type="primary"
+                  caption="Primary active"
+                  fxFlex="20"
+                  (click)="onBtnClick('Primary active clicked')"></tek-button>
+
+      <tek-button type="primary"
+                  state="hovered"
+                  caption="Primary hovered"
+                  fxFlex="20"
+                  (click)="onBtnClick('Primary hovered clicked')"></tek-button>
+
+      <tek-button type="primary"
+                  disabled=true
+                  caption="Primary disabled"
+                  fxFlex="20"
+                  (click)="onBtnClick('Primary disabled clicked')"></tek-button>
+    </div>
+    <br>
+    <div fxLayout="row"
+         fxLayoutAlign="start">
+
+      <tek-button type="secondary"
+                  caption="Secondary active"
+                  fxFlex="20"
+                  (click)="onBtnClick('Secondary active clicked')"></tek-button>
+
+      <tek-button type="secondary"
+                  state="hovered"
+                  caption="Secondary hovered"
+                  fxFlex="20"
+                  (click)="onBtnClick('Secondary hovered clicked')"></tek-button>
+
+      <tek-button type="secondary"
+                  disabled=true
+                  caption="Secondary disabled"
+                  fxFlex="20"
+                  (click)="onBtnClick('Secondary disabled clicked')"></tek-button>
+    </div>
+  </section>
+
 </div>
-<a routerLink="/main">Back</a>
-
-<h1> Buttons</h1>
-
-<section>
-  <h3>Primary Button</h3>
-  <div fxLayout="row"
-       fxLayoutAlign="start">
-
-    <app-tool42-button type="primary"
-                       state="active"
-                       fxFlex="15"></app-tool42-button>
-
-    <app-tool42-button type="primary"
-                       state="hover"
-                       fxFlex="15"></app-tool42-button>
-
-    <app-tool42-button type="primary"
-                       state="disabled"
-                       fxFlex="15"></app-tool42-button>
-  </div>
-  <br>
-  <h3>Secondary Button</h3>
-  <div fxLayout="row"
-       fxLayoutAlign="start">
-
-    <app-tool42-button type="secondary"
-                       state="active"
-                       fxFlex="15"></app-tool42-button>
-
-    <app-tool42-button type="secondary"
-                       state="hover"
-                       fxFlex="15"></app-tool42-button>
-
-    <app-tool42-button type="secondary"
-                       state="disabled"
-                       fxFlex="15"></app-tool42-button>
-  </div>
-</section>
-
-
-<!--<section style = "background-color: #999966;">
-  <h2>COLORS ON DARK BACKGROUND</h2>
-  <h3>Normal</h3>
-  <button type="button" class="btn btn-default">Label</button>
-  <h3>Mouse Over</h3>
-  <button type="button" class="btn btn-primary">Label</button>
-  <h3>Active</h3>
-  <button type="button" class="btn btn-success">Label</button>
-  <h3>Disabled</h3>
-  <button type="button" class="btn btn-danger">Label</button>
-</section> -->

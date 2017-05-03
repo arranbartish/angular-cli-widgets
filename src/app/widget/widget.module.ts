@@ -7,7 +7,10 @@ import { UtilitiesModule } from './../utilities/utilities.module';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { NavigationComponent } from './navigation/components/navigation.component';
 import { NavigationItemComponent } from './navigation/components/navigation-item.component';
-import { Tool42ButtonComponent } from './tool42-button/tool42-button.component';
+import {TekButtonComponent} from './tek-button/tek-button.component';
+import { TekLabelComponent } from './tek-label/tek-label.component';
+import { TekFormInputComponent } from './tek-form-input/tek-form-input.component';
+import { TekContactUsFormComponent } from './tek-contact-us-form/tek-contact-us-form.component';
 
 @NgModule({
   imports: [
@@ -19,13 +22,19 @@ import { Tool42ButtonComponent } from './tool42-button/tool42-button.component';
   exports: [
     SearchFormComponent,
     NavigationComponent,
-    Tool42ButtonComponent
+    TekButtonComponent,
+    TekLabelComponent,
+    TekFormInputComponent,
+    TekContactUsFormComponent
   ],
   declarations: [
     SearchFormComponent,
     NavigationComponent,
     NavigationItemComponent,
-    Tool42ButtonComponent
+    TekButtonComponent,
+    TekLabelComponent,
+    TekFormInputComponent,
+    TekContactUsFormComponent
   ]
 })
 export class WidgetModule {

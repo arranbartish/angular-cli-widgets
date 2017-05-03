@@ -1,23 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Tool42ButtonComponent } from './tool42-button.component';
+import { TekButtonComponent } from './tek-button.component';
 import {expect} from 'chai';
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 
-describe('Tool42ButtonComponent', () => {
-  let component: Tool42ButtonComponent;
-  let fixture: ComponentFixture<Tool42ButtonComponent>;
+describe('TekButtonComponent', () => {
+  let component: TekButtonComponent;
+  let fixture: ComponentFixture<TekButtonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],
-      declarations: [ Tool42ButtonComponent ]
+      declarations: [ TekButtonComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Tool42ButtonComponent);
+    fixture = TestBed.createComponent(TekButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

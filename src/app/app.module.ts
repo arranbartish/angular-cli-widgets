@@ -13,18 +13,27 @@ import { ButtonsComponent } from './shell/buttons/buttons.component';
 import { LandingPageComponent } from './shell/landing-page/landing-page.component';
 import { treeElements } from './widget/navigation/reducer/menu.reducer';
 import { WidgetModule } from './widget/widget.module';
+import { LabelsComponent } from './shell/labels/labels.component';
+import { FormInputsComponent } from './shell/form-inputs/form-inputs.component';
+import { ContactUsFormComponent } from './shell/contact-us-form/contact-us-form.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'buttons', component: ButtonsComponent },
-  { path: 'main', component: LandingPageComponent }
+  { path: 'main', component: LandingPageComponent },
+  { path: 'labels', component: LabelsComponent },
+  { path: 'form-inputs', component: FormInputsComponent },
+  { path: 'contact-us-form', component: ContactUsFormComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    LabelsComponent,
+    FormInputsComponent,
+    ContactUsFormComponent
   ],
   imports: [
     MaterialModule,

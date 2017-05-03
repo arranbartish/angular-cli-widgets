@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+/*tek-button{*/
+  /*padding-right: 10px;*/
+/*}*/
+
 body{
   background-color: #f7f7f6;
 }
@@ -25,4 +29,16 @@ section{
 md-card{
   margin: 5px 0 5px 0;
   cursor: pointer;
+}
+
+a, a:focus, a:hover{
+  text-decoration: none;
+  outline: none;
+}
+
+.breadcrumbs, .breadcrumbs:focus, .breadcrumbs:visited, .breadcrumbs:active, .breadcrumbs:hover{
+  outline: none;
+  color: #707070;
+  font-size: 18px;
+  font-weight: bold;
 }

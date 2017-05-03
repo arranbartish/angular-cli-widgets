@@ -1,0 +1,9 @@
+<div class="tek-form-input">
+  <tek-label [content]='label'
+             level="4"></tek-label>
+  <input [type]=type (focus)="onFocus()" (blur)="onBlur()">
+  <div class="form-input-underline-block">
+    <div class="form-input-underline" [attr.is-focused]='isFocused'>
+    </div>
+  </div>
+</div>
