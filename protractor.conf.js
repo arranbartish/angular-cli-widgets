@@ -39,7 +39,7 @@ exports.config = {
     global.chai = chai;
     browser. protractorImageComparison = new protractorImageComparison(
       {
-        baselineFolder: 'styles/baselines/',
+        baselineFolder: 'styles-artifacts/comparisons/baselines/',
         screenshotPath: 'styles-artifacts/comparisons/',
         autoSaveBaseline: true
       }
