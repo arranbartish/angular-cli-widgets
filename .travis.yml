@@ -25,6 +25,7 @@ script:
   - npm run lint
   - npm run build -- --prod
   - npm run package
+  - npm run approval-style
 before_deploy:
   - cp -R dist aot && cd aot
 deploy:
