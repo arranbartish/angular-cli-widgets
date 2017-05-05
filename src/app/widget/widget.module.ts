@@ -11,6 +11,7 @@ import {TekButtonComponent} from './tek-button/tek-button.component';
 import { TekLabelComponent } from './tek-label/tek-label.component';
 import { TekFormInputComponent } from './tek-form-input/tek-form-input.component';
 import { TekContactUsFormComponent } from './tek-contact-us-form/tek-contact-us-form.component';
+import { TekCancelSubmitButtonsComponent } from './tek-cancel-submit-buttons/tek-cancel-submit-buttons.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { TekContactUsFormComponent } from './tek-contact-us-form/tek-contact-us-
     TekButtonComponent,
     TekLabelComponent,
     TekFormInputComponent,
-    TekContactUsFormComponent
+    TekContactUsFormComponent,
+    TekCancelSubmitButtonsComponent
   ],
   declarations: [
     SearchFormComponent,
@@ -34,7 +36,8 @@ import { TekContactUsFormComponent } from './tek-contact-us-form/tek-contact-us-
     TekButtonComponent,
     TekLabelComponent,
     TekFormInputComponent,
-    TekContactUsFormComponent
+    TekContactUsFormComponent,
+    TekCancelSubmitButtonsComponent
   ]
 })
 export class WidgetModule {

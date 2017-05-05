@@ -10,7 +10,9 @@
 
 <section>
   <div fxLayout="row">
-    <app-tek-contact-us-form fxFlex="33"></app-tek-contact-us-form>
+    <app-tek-contact-us-form fxFlex="33"
+                             (onCancel)="onBtnClick('Cancel button clicked')"
+                             (onSubmit)="onBtnClick('Submit button clicked')"></app-tek-contact-us-form>
   </div>
 </section>
 

@@ -12,4 +12,7 @@ export class ContactUsFormComponent implements OnInit {
   ngOnInit() {
   }
 
+  onBtnClick(message) {
+    alert(message);
+  }
 }

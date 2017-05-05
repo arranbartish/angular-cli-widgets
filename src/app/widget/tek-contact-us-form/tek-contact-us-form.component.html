@@ -4,11 +4,15 @@
   <app-tek-form-input label="Comment"
                       type="text"></app-tek-form-input>
 
-  <app-tek-button type="secondary"
-                  caption="Cancel"></app-tek-button>
+  <app-tek-cancel-submit-buttons (onCancel)="onCancelClick()"
+                                 cancelCaption="Cancel"
+                                 submitCaption="Submit"
+                                 (onSubmit)="onSubmitClick()"></app-tek-cancel-submit-buttons>
+  <!--<app-tek-button type="secondary"-->
+  <!--caption="Cancel"></app-tek-button>-->
 
-  <app-tek-button type="primary"
-                  caption="Save"></app-tek-button>
+  <!--<app-tek-button type="primary"-->
+  <!--caption="Save"></app-tek-button>-->
 </div>
 
 

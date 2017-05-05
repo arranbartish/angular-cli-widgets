@@ -1,0 +1,15 @@
+:host{
+  display: block;
+}
+.tek-cancel-submit-buttons{
+  app-tek-button{
+    float: left;
+    width: 100%;
+    @media (min-width: 960px) {
+      width: calc(50% - 3px);
+      &:not(:last-child){
+        margin-right: 6px;
+      }
+    }
+  }
+}

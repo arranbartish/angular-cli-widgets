@@ -17,6 +17,7 @@ import { LabelsComponent } from './shell/labels/labels.component';
 import { FormInputsComponent } from './shell/form-inputs/form-inputs.component';
 import { ContactUsFormComponent } from './shell/contact-us-form/contact-us-form.component';
 
+
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'buttons', component: ButtonsComponent },
