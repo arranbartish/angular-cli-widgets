@@ -2,7 +2,7 @@
   "name": "arranbartish-angular-cli-widgets",
   "version": "4.3.0",
   "license": "MIT",
-  "description": "UI widgets produced for use with angular2 SPA's",
+  "description": "UI widgets for Dan produced for use with angular2 SPA's",
   "homepage": "https://github.com/arranbartish/angular-cli-widgets",
   "author": "Arran Bartish <arranbartish@hotmail.com> (https://ca.linkedin.com/in/arran-bartish-7720a21)",
   "engines": {
