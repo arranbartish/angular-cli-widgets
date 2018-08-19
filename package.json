@@ -107,7 +107,7 @@
     "sinon-chai": "^2.9.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "^2.2.2",
+    "typescript": "^3.0.1",
     "wallaby-webpack": "0.0.33"
   }
 }
