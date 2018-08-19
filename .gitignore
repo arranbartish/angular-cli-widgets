@@ -4,8 +4,6 @@
 /dist
 /tmp
 /out-tsc
-/aot
-/styles-artifacts
 
 # dependencies
 /node_modules
@@ -32,12 +30,17 @@
 /coverage
 /libpeerconnection.log
 npm-debug.log
+yarn-error.log
 testem.log
 /typings
 
 # e2e
 /e2e/*.js
 /e2e/*.map
+!/e2e/protractor.conf.js
+
+# style output
+/styles-artifacts
 
 # System Files
 .DS_Store
@@ -45,3 +48,4 @@ Thumbs.db
 
 # generated ng files
 *.ng*.json
+

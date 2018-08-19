@@ -1,15 +1,18 @@
 var gulp = require('gulp');
-var inlineResources = require('./scripts/gulp/inline-resources');
-var sass = require('gulp-sass');
+// var inlineResources = require('./scripts/gulp/inline-resources');
+// var sass = require('gulp-sass');
+let path = require('path');
 var fs = require('fs');
 var git = require('gulp-git');
-var jeditor = require('gulp-json-editor');
+// var jeditor = require('gulp-json-editor');
 var _ = require('lodash');
 var run = require('gulp-run');
 
 var baselineCode = 'master';
 var baselineRepo = 'https://github.com/arranbartish/angular-cli-widgets.git';
-var baselineRepoLocation = './styles-artifacts/baseline-repo';
+
+let rootLocation = path.join(__dirname, './');
+var baselineRepoLocation = path.join(rootLocation, './styles-artifacts/baseline-repo');
 const NOT_FOUND = 34;
 
 

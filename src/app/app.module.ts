@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+import { MatSelectModule, MatButtonModule, MatCardModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
@@ -37,18 +37,19 @@ const routes: Routes = [
     ContactUsFormComponent
   ],
   imports: [
-    MaterialModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatCardModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
     WidgetModule,
-    StoreModule.provideStore({ treeElements })
+    StoreModule.forRoot({ treeElements })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule { }

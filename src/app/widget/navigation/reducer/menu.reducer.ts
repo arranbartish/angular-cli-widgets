@@ -1,8 +1,7 @@
-import { Action } from '@ngrx/store';
 
 import { MenuAction } from '../actions/menu.action';
 
-export const treeElements = (state: any = [], action: Action) => {
+export const treeElements = (state: any = [], action: {type, payload}) => {
     switch (action.type) {
         case MenuAction.INIT_MENU_ITEMS:
             return action.payload;

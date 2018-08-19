@@ -2,16 +2,18 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 let _ = require('lodash');
+let path = require('path');
+let rootLocation = path.join(__dirname, '../');
+let suiteLocation = path.join(rootLocation,
+  (_.isEmpty(process.env.SUITE_LOCATION))? 'e2e': _.trim(process.env.SUITE_LOCATION));
 
-let suiteLocation = (_.isEmpty(process.env.SUITE_LOCATION))? 'e2e' : _.trim(process.env.SUITE_LOCATION);
-
-console.info('Running protractor suite ['+suiteLocation+']');
+console.log('Running protractor suite ['+suiteLocation+']');
 
 
 exports.config = {
   allScriptsTimeout: 11000,
   specs: [
-    './'+suiteLocation+'/**/*.e2e-spec.ts'
+    suiteLocation+'/**/*.e2e-spec.ts'
   ],
   capabilities: {
     'browserName': 'chrome'
@@ -25,12 +27,10 @@ exports.config = {
     print: function () {
     }
   },
-  beforeLaunch: function () {
+  onPrepare: function() {
     require('ts-node').register({
       project: 'e2e/tsconfig.e2e.json'
     });
-  },
-  onPrepare: function() {
     var chai = require('chai');
     var chaiAsPromised = require("chai-as-promised");
     var protractorImageComparison = require('protractor-image-comparison');

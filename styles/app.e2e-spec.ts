@@ -10,8 +10,8 @@ describe('angular-cli-widgets styles', () => {
   });
 
   it('Landing page will be unchanged', () => {
-    var width = 800;
-    var height = 600;
+    const width = 800;
+    const height = 600;
     browser.driver.manage().window().setSize(width, height);
 
     page.navigateTo();
