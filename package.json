@@ -51,7 +51,7 @@
     "rollup": "rollup -c",
     "minify": "uglifyjs aot/bundles/arranbartishAngularCliWidgets.umd.js --screw-ie8 --compress --mangle --comments --output aot/bundles/arranbartishAngularCliWidgets.umd.min.js",
     "package": "npm run clean-aot && npm run transpile && gulp && npm run rollup && npm run minify",
-    "prepackage:prod": "npm run build -- --prod",
+    "prepackage:prod": "npm install && npm run build -- --prod",
     "package:prod": "npm run package"
   },
   "private": false,
