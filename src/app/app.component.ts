@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
-import { SearchOptions } from './widget/search-form/search-options';
-import { TreeElement } from './widget/navigation/valueObject/treeElement';
+import { SearchOptions } from '../../projects/angular-cli-widgets-components/src/public_api';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +14,4 @@ export class AppComponent {
     target: './search'
   };
 
-  treeElements: TreeElement[] = [
-    { title: 'A Link', targetUrl: '/a-uri?q=abc&q=def', imageCssClass: 'glyphicon-font' },
-    { title: 'B Link', targetUrl: '/b-uri', imageCssClass: 'glyphicon-bold' }
-  ];
 }

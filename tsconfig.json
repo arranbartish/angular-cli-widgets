@@ -4,7 +4,7 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "module": "es2015",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "angular-cli-widgets-components": [
+        "dist/angular-cli-widgets-components"
+      ],
+      "angular-cli-widgets-components/*": [
+        "dist/angular-cli-widgets-components/*"
+      ]
+    }
   }
 }
