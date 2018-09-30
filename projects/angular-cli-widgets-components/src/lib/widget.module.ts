@@ -5,9 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { UtilitiesModule } from './../utilities/utilities.module';
 import { SearchFormComponent } from './search-form/search-form.component';
-import { NavigationComponent } from './navigation/components/navigation.component';
-import { NavigationItemComponent } from './navigation/components/navigation-item.component';
-import {TekButtonComponent} from './tek-button/tek-button.component';
+import { TekButtonComponent } from './tek-button/tek-button.component';
 import { TekLabelComponent } from './tek-label/tek-label.component';
 import { TekFormInputComponent } from './tek-form-input/tek-form-input.component';
 import { TekContactUsFormComponent } from './tek-contact-us-form/tek-contact-us-form.component';
@@ -22,7 +20,6 @@ import { TekCancelSubmitButtonsComponent } from './tek-cancel-submit-buttons/tek
   ],
   exports: [
     SearchFormComponent,
-    NavigationComponent,
     TekButtonComponent,
     TekLabelComponent,
     TekFormInputComponent,
@@ -31,8 +28,6 @@ import { TekCancelSubmitButtonsComponent } from './tek-cancel-submit-buttons/tek
   ],
   declarations: [
     SearchFormComponent,
-    NavigationComponent,
-    NavigationItemComponent,
     TekButtonComponent,
     TekLabelComponent,
     TekFormInputComponent,

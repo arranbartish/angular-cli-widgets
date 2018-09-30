@@ -6,13 +6,11 @@ import { MatSelectModule, MatButtonModule, MatCardModule } from '@angular/materi
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
-import { StoreModule, ActionReducer, combineReducers } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
 import { ButtonsComponent } from './shell/buttons/buttons.component';
 import { LandingPageComponent } from './shell/landing-page/landing-page.component';
-import { treeElements } from './widget/navigation/reducer/menu.reducer';
-import { WidgetModule } from './widget/widget.module';
+import { WidgetModule } from '../../projects/angular-cli-widgets-components/src/public_api';
 import { LabelsComponent } from './shell/labels/labels.component';
 import { FormInputsComponent } from './shell/form-inputs/form-inputs.component';
 import { ContactUsFormComponent } from './shell/contact-us-form/contact-us-form.component';
@@ -46,8 +44,7 @@ const routes: Routes = [
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    WidgetModule,
-    StoreModule.forRoot({ treeElements })
+    WidgetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,18 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./aot",
+    "outDir": "../aot",
     "module": "es2015",
     "stripInternal": true,
     "skipLibCheck": true,
-    "baseUrl": "",
     "types": [],
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   },
   "files": [
-    "src/app/widget/widget.module.ts",
-    "src/main-aot.ts",
-    "index.ts"
+    "./app/widget/widget.module.ts",
+    "./main-aot.ts",
+    "./index.ts"
   ],
   "paths": {
     "@angular/core": ["node_modules/@angular/core"],
@@ -23,7 +22,10 @@
     "rxjs/*": ["node_modules/rxjs/*"]
   },
   "angularCompilerOptions": {
-    "genDir": "./aot",
-    "strictMetadataEmit" : true
+    "genDir": "../aot",
+    "strictMetadataEmit" : true,
+    "annotationsAs": "decorators",
+    "entryModule": "app/widget/widget.module#WidgetModule",
+    "preserveWhitespaces": false
   }
 }

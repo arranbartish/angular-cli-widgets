@@ -10,4 +10,4 @@
  * @description
  * Entry point for all public APIs of the widget package.
  */
-export * from './src/app/widget';
+export * from '../projects/angular-cli-widgets-components/src/public_api';
