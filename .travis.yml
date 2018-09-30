@@ -20,21 +20,13 @@ install:
   - npm install codecov
   - npm install
 script:
-  - npm run ng test -- --single-run=true --browsers Chrome --code-coverage
-  - ./node_modules/codecov/bin/codecov
-  - npm run e2e
-  - npm run lint
-  - npm run build -- --prod
-  - npm run package
-  - npm run approval-style
-before_deploy:
-  - cp -R dist aot && cd aot
+  - npm run package:prod
 deploy:
   - provider: npm
     email: arranbartish@hotmail.com
     api_key:
       secure: foEiZeaPwxZ7aWJxvmDwbrXFgy7e29SRfrgp55xYwqfiVbhk9UOO+1IDBfJMJXMfreSyAFwodVOjvjEzNJX/rvJ1AeTAfW67UEh3+3fNPDQYIrvQRbi3HYCzDOrZwNg1vAGg68qmOX1IQJLJnaLa+Zkkfj0zAzbaNvKpssHT6ZEUf1Kly0VQ7q6K24pCbGmwQxLd874nKL2djPsZepKVoUmaki1CKAI0WyA7iHbUWZRC69Be6AjA9gyAlDSIGm8Nzb3ccR9sTahUJJ5TF7OAkbmy39JIlxjxPabGZNnfMos7FVs3xYRC9Yj50C7iF6NPnRtJ3r3WrdVhGsP6UshDS5BqhBpAd+H4BjsDfuqJE38jKJ1Ndl43am7x0gD7S0Bm8Ck9MIxNekWIKvJbkz6TJLVhlzDgSFxG7lzsde96BjchLqJk9ExDfsoveujywPdNk0JXjOXFo6C55kWsxFG/U+eiKT60+eXlXCVKnJKDfssyRns0pOt2F/KBXbhhgQTeNyeeArby7KVy4lTzCRBnG9a3GvFtUMs/XhjnAJTy0UoJIltoi6JQCpYvdUfHXlFfYWmhW65iFVQtYdpd1X1gqGlJNe3td8RgsZ+byKoVfn6Gb6YonZbRu01mz05mXYZpp3NZ7V4I0TmqKql+2X4OcJapWjyPGr5fy/seLSXpuI0=
     skip_cleanup: true
-    local-dir: aot
+    local-dir: dist/angular-cli-widgets-components
     on:
       tags: true
