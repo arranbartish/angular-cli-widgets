@@ -11,7 +11,7 @@
 
   <section>
     <h1> Buttons</h1>
-    <div fxLayout="row"
+    <div class="buttons-shell__primary-panel" fxLayout="row"
          fxLayoutAlign="start">
       <app-tek-button type="primary"
                       caption="Primary active"
@@ -31,7 +31,8 @@
                       (click)="onBtnClick('Primary disabled clicked')"></app-tek-button>
     </div>
     <br>
-    <div fxLayout="row"
+    <div class="buttons-shell__secondary-panel"
+         fxLayout="row"
          fxLayoutAlign="start">
 
       <app-tek-button type="secondary"

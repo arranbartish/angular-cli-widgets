@@ -1,8 +1,8 @@
 import { browser, element, by } from 'protractor';
 
-export class AngularCliWidgetsPage {
+export class ButtonsPage {
   navigateTo() {
-    return browser.get('/');
+    return browser.get('/buttons');
   }
 
 }

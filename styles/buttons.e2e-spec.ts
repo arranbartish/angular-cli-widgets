@@ -1,12 +1,12 @@
-import { AngularCliWidgetsPage } from '../e2e/src/app.po';
+import { ButtonsPage } from '../e2e/src/buttons.po';
 import {browser} from 'protractor';
 const expect = global['chai'].expect;
 
-describe('angular-cli-widgets styles', () => {
-  let page: AngularCliWidgetsPage;
+describe('angular-cli-widgets buttons styles', () => {
+  let page: ButtonsPage;
 
   beforeEach(() => {
-    page = new AngularCliWidgetsPage();
+    page = new ButtonsPage();
   });
 
   it('Landing page will be unchanged', () => {
@@ -15,6 +15,6 @@ describe('angular-cli-widgets styles', () => {
     browser.driver.manage().window().setSize(width, height);
 
     page.navigateTo();
-    expect(browser.protractorImageComparison.checkScreen('landing-page')).to.eventually.equal(0);
+    expect(browser.protractorImageComparison.checkScreen('buttons-shell__primary-panel')).to.eventually.equal(0);
   });
 });
