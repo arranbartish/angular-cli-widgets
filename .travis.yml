@@ -4,15 +4,24 @@ node_js:
   - 8.11
 sudo: required
 addons:
-apt:
-  packages:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    - google-chrome
+    packages:
+    - g++-4.8
+    - lsb-base
     - google-chrome-stable
+    - google-chrome-beta
 before_install:
   - npm install -g npm@6.4.1
-  - export CHROME_BIN=chromium-browser
+  - export CHROME_BIN=google-chrome-stable
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - chromium-browser --version
   - google-chrome --version
+  - google-chrome-beta --version
+  - google-chrome-stable --version
 install:
   - npm install codecov
   - npm install

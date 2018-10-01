@@ -86,7 +86,10 @@ gulp.task('clone-code-base', function () {
       git.clone(baselineRepo, {args: baselineRepoLocation}, function(err) {
         if (err) throw err;
       });
-    });
+    })
+    .on('end', function () {
+      console.info('clone complete');
+    });;
 
 });
 
