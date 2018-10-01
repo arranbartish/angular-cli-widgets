@@ -47,7 +47,7 @@
     "e2e": "ng e2e --webdriver-update false",
     "clone-golden-master": "gulp --gulpfile style-test-gulpfile.js",
     "pregenerate-golden-master": "mkdir -p styles-artifacts/baseline-repo",
-    "generate-golden-master": "cd styles-artifacts/baseline-repo && npm prune install && npm-run-all style-test && cp -- -R styles-artifacts/comparisons ../",
+    "generate-golden-master": "cd styles-artifacts/baseline-repo && npm prune install && npm-run-all style-test && npm run cp -- -R styles-artifacts/comparisons ../",
     "style-test": "cross-env SUITE_LOCATION=styles npm run e2e --webdriver-update false",
     "preapproval-style": "npm run clean-styles-artifacts",
     "approval-style": "npm-run-all clone-golden-master generate-golden-master style-test",
